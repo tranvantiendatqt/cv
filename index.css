@@ -37,47 +37,17 @@ body{
 
 }
      
-/* .icon1{
-    grid-column: 2 / 7;
-}
-     
-/* .icon1{
-    grid-column: 2 / 7;
-}
-     
-/* .icon1{
-    grid-column: 2 / 7;
-}
-     
-/* .icon1{
-    grid-column: 2 / 7;
-}
-     
-/* .icon1{
-    grid-column: 2 / 7;
-    
-}
-.icon2{
-    grid-row: 2 / 3;
-    padding-left: 7px;
-}
-.icon3{
-    grid-row: 3 / 4;
-    padding-left: 7px;
-}
-.icon4{
-    grid-row: 4 / 5;
-    padding-left: 7px;
-}
-.icon5{
-    grid-row: 5 / 6;
-    padding-left: 7px;
-}
-.icon6{
-    grid-row: 6 / 7;
-    padding-left: 7px;
-}
- */
+
+ iframe{
+    flex-basis: 60%;
+    overflow: scroll;
+    margin: 0 auto;
+    margin-left: 0;
+    padding-left: 15px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+
+ }
 #sidebar{
     flex-basis: 60%;
     overflow: scroll;
