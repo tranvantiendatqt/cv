@@ -120,6 +120,16 @@ text-align: center;
     padding: 10px;
     flex-grow: 1;
 }
+#suthat{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+.SUTHAT{
+    height: 200px;
+    padding: 10px;
+    flex-grow: 1;
+}
 
 #giatien1{
 
