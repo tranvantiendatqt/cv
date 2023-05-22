@@ -26,6 +26,26 @@ body{
 
 
 }
+#anhchuaicon{
+    position: relative;
+}
+.photoicon{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.photoicon h1{
+    font-size: 24px;
+    color: rgb(230, 148, 214);
+    margin-bottom: 10px;
+}
+.photoicon i{
+    font-size: 32px;
+    color: #FFF;
+}
+
 #content .icon1{
     padding-left: 35px;
 }
