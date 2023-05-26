@@ -1,128 +1,172 @@
-
-body{
-    background-color: rgb(243, 224, 236);
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+body {
+    background-color: #080000;
+    font-family: Roboto, sans-serif;
 }
 
-#wrapper{
-    max-width: 1200px;
-    margin: 0 auto;
+p {
+    color: white;
 }
-#header{
-    padding: 30px;
-}
-#main-content{
-    display: flex;
-    min-height: 400px;
-    max-height: 600px;
-}
-#content{
-    flex-basis: 40%;
+
+.main {
+    width: 1000px;
+    height: 500px;
+    margin: 50px auto;
     display: grid;
-    grid-template-rows:100px 100px 100px 100px 100px 100px ;
-    grid-template-columns: 40px; 
-    background-color: rgb(210, 203, 203);
-    
-
-
+    grid-template: 1fr/50px 4fr 5fr;
+    box-shadow: 0 0 1.5px #838080;
+    background: #1d1e20;
 }
-#anhchuaicon{
+
+.image-box {
     position: relative;
 }
-.photoicon{
+
+.image-box .image-box-avatar {
+    width: 100%;
+    height: 110%;
     position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-.photoicon h1{
-    font-size: 24px;
-    color: rgb(230, 148, 214);
-    margin-bottom: 10px;
-}
-.photoicon i{
-    font-size: 32px;
-    color: #FFF;
+    top: -5%;
+    left: 0;
+    background-image: url("img/banner2.jpg");
+    background-size: cover;
+    box-shadow: 0 0 2px #404040;
 }
 
-#content .icon1{
-    padding-left: 35px;
+.menu {
+    display: grid;
+    grid-template: 1fr 8fr 1fr/1fr;
 }
 
-#content .icon{
+.menu .menu-icons {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-}
-     
-
- iframe{
-    flex-basis: 60%;
-    overflow: scroll;
-    margin: 0 auto;
-    margin-left: 0;
-    padding-left: 15px;
-    margin-top: 40px;
-    margin-bottom: 15px;
-
- }
-#sidebar{
-    flex-basis: 60%;
-    overflow: scroll;
-    margin: 0 auto;
-    padding-left: 25px;
-    margin-top: 40px;
-    margin-bottom: 15px;
-
+    color: #914496;
+    background-color: #191a1c;
 }
 
-.noidungchinh{
+.menu .menu-icons div {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.menu .menu-icontop {
+    text-align: center;
+    background-color: #a04aa8;
+    padding-top: 15px;
+}
+
+.menu .menu-iconbottom {
+    background-color: #161b1e;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.image-box .image-box-avatar .image-box-avatar-infomations {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     display: grid;
-    grid-template-columns: 350px 350px;
-
+    grid-template: repeat(3, 1fr) / 1fr;
+    justify-items: center;
+    padding: 15px;
+    color: white;
 }
 
-#footer{
-    padding: 20px;
+.image-box .image-box-avatar .image-box-avatar-infomations .image-box-avatar-infomations-2 {
+    display: grid;
+    grid-template: 1fr/30px 30px 30px 30px;
+    justify-items: center;
 }
 
-.tieudenho{
-    color: rgb(24, 102, 150);
+.infomations {
+    display: grid;
+    grid-template: 1fr 1fr 1fr/1fr;
+    overflow: auto;
+    background: #1d1e20;
+    padding: 0px 5px 0px 35px;
+    margin: 40px 0px;
 }
 
-
-.gioithieu h1 {
-text-align: center;
-}
-.gioithieu h2{
-    color: blueviolet;
+.infomations::-webkit-scrollbar-thumb {
+    background: #2b2b2b;
+    border-radius: 10px;
 }
 
-#Giatien{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-}
-#giatien{
-    height: 200px;
-    padding: 10px;
-    flex-grow: 1;
-}
-#suthat{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-}
-.SUTHAT{
-    height: 200px;
-    padding: 10px;
-    flex-grow: 1;
+.infomations::-webkit-scrollbar {
+    width: 5px;
 }
 
-.abc{
-    cursor: inherit;
+.infomations .infomations-aboutMe {
+    display: grid;
+    gap: 20px;
+    border-bottom: 1px solid #838080;
+    padding-bottom: 50px;
 }
 
+.infomations .infomations-myServices {
+    display: grid;
+    grid-template: 70px 1fr/1fr;
+    padding-top: 50px;
+}
 
+.infomations .infomations-myServices div i {
+    color: #914496;
+}
+
+.infomations-myServices-cards {
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr;
+    gap: 30px 0;
+}
+
+.infomations-myServices-cards .infomations-myServices-card {
+    display: grid;
+}
+
+.infomations-myServices-cards .infomations-myServices-card div i {}
+
+.tieude {
+    font-size: 70px;
+    font-weight: 900;
+    color: #fdfdfd;
+}
+
+.dat123 {
+    line-height: 26px;
+    color: #888888;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.dat1234 {
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 900;
+    color: #fdfdfd;
+}
+
+.dat12345 {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 27px;
+    color: #fdfdfd;
+    margin: 10px 0px 7.5px;
+}
+
+.icon123 {
+    font-size: 30px;
+    line-height: 30px;
+    color: #c97aff;
+    font-weight: 100;
+}
+
+.ngaysinh {
+    color: #c97aff;
+    font-size: 18px;
+    line-height: 30px;
+    font-style: italic;
+    font-weight: 500;
+}
